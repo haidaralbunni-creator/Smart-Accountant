@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="نظام المحاسبة السوري الموحد - Unified Syrian Accounting System">
+    <meta name="theme-color" content="#2ecc71">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="المحاسب الذكي">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+    <link rel="apple-touch-icon" href="./icon-192.png">
     <title>Smart Accountant Pro - DR.HAIDAR ALBUNNI</title>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -149,7 +157,7 @@
             <option value="USD">USD ($)</option><option value="EUR">EUR (€)</option><option value="TRY">TRY (₺)</option>
         </select>
         <input type="number" id="curAmt" placeholder="0.00" oninput="liveUpdate()">
-        <input type="number" id="curRate" id="curRateInput" placeholder="سعر الصرف بالليرة الجديدة" oninput="liveUpdate()" style="margin-top:10px">
+        <input type="number" id="curRate" placeholder="سعر الصرف بالليرة الجديدة" oninput="liveUpdate()" style="margin-top:10px">
         <div id="res-conv" class="inline-result" style="display:block">0.00 SYP</div>
     </div>
 
@@ -170,7 +178,7 @@
 
     <div class="footer-info">
         <div class="dev-card">
-            <span class="dev-name">DR. HAIDAR ALBUNNI</span>
+            <span class="dev-name">DR.HAIDAR ALBUNNI</span>
             <div class="dev-links">
                 <a href="https://wa.me/963991365308" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
                 <a href="mailto:haidaralbunni@gmail.com"><i class="fas fa-envelope"></i> Email</a>
@@ -180,7 +188,313 @@
 </div>
 
 <script>
-(function(){const _0xStrings=['U1lQX1YyNF9NQVNURVI=','YXI=','SEFJREFSX1BST18yMDI2X1YyNA==','RW5nbGlzaA==','2KfZhNmF2K3Yp9iz2Kgg2KfZhNiw2YPZig==','2YbYuNin2YUg2KfZhNmF2K3Yp9iz2KjYqSDYp9mE2LPZiNix2Yog2KfZhNmF2YjYrdiv','2KfZhNit2LPYp9io','2KfZhNi12YbYr9mI2YI=','2KfZhNi52YXZhNin2Ko=','2KfZhNiz2KzZhA==','2LPYudixINin2YTZhdmG2KrYrA==','2KfZhNmF2KjZhNi6INin2YTZhdiz2KrZhNmF','2K3Ys9in2Kgg2KfZhNmG2KrZitis2Kk=','2KzYsdivINin2YTYtdmG2K/ZiNmCINin2YTZhdin2YTZig==','2KXYrNmF2KfZhNmKINin2YTZhNmK2LHYqSDYp9mE2KzYr9mK2K/YqSBTWVA=','2KXYrNmF2KfZhNmKINin2YTZhNmK2LHYqSDYp9mE2YLYr9mK2YXYqSBTWVA=','2LnYsdi2INmI2K3Zgdi4INin2YTYrNix2K8=','2YXYrdmI2YQg2KfZhNi52YXZhNin2Ko=','2KfYrtiq2LEg2KfZhNi52YXZhNipINmI2KfZhNmF2KjZhNi6INmI2LPYudixINin2YTYtdix2YEg2KjYp9mE2YTZitix2Kkg2KfZhNis2K/Zitiv2Kk=','2LPYudixINin2YTYtdix2YEg2KjYp9mE2YTZitix2Kkg2KfZhNis2K/Zitiv2Kk=','2KfZhNiz2KzZhCDZiNin2YTYqtmC2KfYsdmK2LE=','2KrYtdmB2YrYsSDYp9mE2LPYrNmE','2KfZhNiq2KfYsdmK2K4g2YjYp9mE2YjZgtiq','2KfZhNmC2YrZhdip','2KfZhNmG2KrZitis2Kk=','2KjYp9mC2Yog2YTZhNiy2KjZiNmG','2YbZgti1INmF2YYg2KfZhNiy2KjZiNmG','2KfZhNit2LPYp9ioINmF2YPYqtmF2YQ=','4pqg77iPINij2K/YrtmEINin2YTYs9i52LEg2KPZiNmE2KfZiyE=','2YfZhCDYo9mG2Kog2YXYqtij2YPYryDZhdmGINiq2LXZgdmK2LEg2KfZhNiz2KzZhNif','2YTZitix2Kkg2LPZiNix2YrYqSDYrNiv2YrYr9ipIFNZUA==','2YTZitix2Kkg2LPZiNix2YrYqSDZgtiv2YrZhdipIFNZUA==','2LfYqNin2LnYqQ==','2KrYtdiv2YrYsSBFeGNlbA==','2KfZhNi52LHYqNmK2Kk=','U21hcnQgQWNjb3VudGFudA==','VW5pZmllZCBTWVAgU3lzdGVt','Q2FsYw==','VmF1bHQ=','UmF0ZXM=','TG9n','UHJvZHVjdCBQcmljZQ==','QW1vdW50IFBhaWQ=','Q2FsY3VsYXRl','VmF1bHQgSW52ZW50b3J5','VG90YWwgTmV3IFNZUA==','VG90YWwgT2xkIFNZUA==','U2hvdyAmIFNhdmU=','Q3VycmVuY3kgQ29udmVydGVy','U2VsZWN0IGN1cnJlbmN5LCBhbW91bnQgJiByYXRlIGluIE5ldyBTWVA=','RXhjaGFuZ2UgcmF0ZSBpbiBOZXcgU1lQ','UmVwb3J0cyBMb2c=','Q2xlYXIgQWxsIExvZw==','RGF0ZSAmIFRpbWU=','VmFsdWU=','UmVzdWx0','Q2hhbmdlIGZvciBDdXN0b21lcg==','U2hvcnRhZ2UgZGV0ZWN0ZWQ=','UGFpZCBpbiBGdWxs','4pqg77iPIEVudGVyIHByaWNlIGZpcnN0IQ==','QXJlIHlvdSBzdXJlIHlvdSB3YW50IHRvIGNsZWFyIHRoZSBsb2c/','TmV3IFNZUA==','T2xkIFNZUA==','UHJpbnQ=','RXhwb3J0IEV4Y2Vs','U1lQX0RFVklDRV9JRA==','fHw=','SEFJREFSLQ==','QUNULQ==','LQ==','YWN0aXZhdGlvbktleUlucHV0','U1lQX0FDVElWQVRFRF9UT0tFTg==','QUNUSVZFXw==','c3VjY2Vzcw==','2KrZhSDYp9mE2KrZgdi52YrZhCDYqNmG2KzYp9it','2KPZh9mE2KfZiyDYqNmDINiv2YPYqtmI2LEg2K3Zitiv2LE=','YWN0Q2FyZA==','c2hha2U=','ZXJyb3I=','2YHYtNmEINin2YTYqtmB2LnZitmE','2LHZhdiyINin2YTYqtmB2LnZitmEINi62YrYsSDYtdit2YrYrSEg2KrZiNin2LXZhCDZhdi5INin2YTYpdiv2KfYsdipLg==','IzJlY2M3MQ==','bWFpbkFwcA==','YmxvY2s=','YWN0aXZhdGlvbi1sYXllcg==','ZmxleA==','ZGlzcGxheURldmljZUlE','dG9wLWVuZA==','2KrZhSDYp9mE2YbYs9iu','ZW4=','cnRs','bHRy','bGFuZ0J0bg==','YnJhbmQ=','aFRpdGxl','dC1jYWxj','dC1ib3g=','dC1jb252','dC1sb2c=','cy1wcmljZQ==','cy1wYWlk','YnRuLXJ1bg==','cy1ib3g=','bGItbg==','bGItbw==','YnRuLWJveA==','cy1jb252','aS1jb252','cy1sb2c=','YnRuLWNscg==','YnRuLXByaW50','YnRuLWV4Y2Vs','Y3VyUmF0ZQ==','dGgtdA==','dGgtdg==','dGgtcg==','bC1uMQ==','bC1vMQ==','bC1uMg==','bC1vMg==','cE4=','cE8=','LnRhYi1saW5rLCAudGFiLWNvbnRlbnQ=','YWN0aXZl','dC0=','dGFiLQ==','ZGF0YS10aGVtZQ==','ZGFyaw==','LmZhYi10aGVtZSBp','ZmFzIGZhLW1vb24=','ZmFzIGZhLXN1bg==','bUljb24=','bVRpdGxl','bU1zZw==','bW9kYWxPdmVybGF5','bW9kYWxBY3Rpb25z','YnRuLW1haW4=','Y2xvc2VNb2RhbCgp','YmFja2dyb3VuZDojN2Y4YzhkOyBtYXJnaW4tdG9wOjVweA==','bm9uZQ==','cGF5Tg==','cGF5Tw==','ZmFzIGZhLWV4Y2xhbWF0aW9uLXRyaWFuZ2xl','IQ==','dmFyKC0td2FybmluZyk=','2KzYr9mK2K8=','TkVX','2YLYr9mK2YU=','T0xE','ZmFzIGZhLXBsdXMtY2lyY2xl','dmFyKC0tcHJpbWFyeSk=','ZmFzIGZhLW1pbnVzLWNpcmNsZQ==','dmFyKC0tZGFuZ2VyKQ==','ZmFzIGZhLWNoZWNrLWRvdWJsZQ==','Ym94Tg==','Ym94Tw==','cmVzLWJveA==','8J+TpiBWQVVMVA==','Y3VyQW10','cmVzLWNvbnY=','MA==','I2xvZ1RhYmxlIHRib2R5','Zm9udC13ZWlnaHQ6ODAwOyBjb2xvcjoke2NvbG9yfQ==','ZmFzIGZhLXRyYXNoLWFsdA==','Q29uZmlybQ==','XHVGRUZGRGF0ZSxWYWx1ZSxSZXN1bHRcbg==','YQ==','dGV4dC9jc3Y=','U1lQX0RSX0hBSURBUl9SRVBPUlQuY3N2'];const _0xMap=function(i){return decodeURIComponent(atob(_0xStrings[i]).split('').map(function(c){return'%'+('00'+c.charCodeAt(0).toString(16)).slice(-2);}).join(''));};let _0xDB=JSON.parse(localStorage.getItem(_0xMap(0)))||[];let _0xLang=_0xMap(1);const _0xSalt=_0xMap(2);const _0xLangData={ar:{l:_0xMap(3),b:_0xMap(4),h:_0xMap(5),t1:_0xMap(6),t2:_0xMap(7),t3:_0xMap(8),t4:_0xMap(9),s1:_0xMap(10),s2:_0xMap(11),br:_0xMap(12),s3:_0xMap(13),ln:_0xMap(14),lo:_0xMap(15),bb:_0xMap(16),sc:_0xMap(17),ic:_0xMap(18),rp:_0xMap(19),sl:_0xMap(20),bc:_0xMap(21),tt:_0xMap(22),tv:_0xMap(23),tr:_0xMap(24),mb:_0xMap(25),mn:_0xMap(26),me:_0xMap(27),ee:_0xMap(28),cf:_0xMap(29),n:_0xMap(30),o:_0xMap(31),p:_0xMap(32),e:_0xMap(33)},en:{l:_0xMap(34),b:_0xMap(35),h:_0xMap(36),t1:_0xMap(37),t2:_0xMap(38),t3:_0xMap(39),t4:_0xMap(40),s1:_0xMap(41),s2:_0xMap(42),br:_0xMap(43),s3:_0xMap(44),ln:_0xMap(45),lo:_0xMap(46),bb:_0xMap(47),sc:_0xMap(48),ic:_0xMap(49),rp:_0xMap(50),sl:_0xMap(51),bc:_0xMap(52),tt:_0xMap(53),tv:_0xMap(54),tr:_0xMap(55),mb:_0xMap(56),mn:_0xMap(57),me:_0xMap(58),ee:_0xMap(59),cf:_0xMap(60),n:_0xMap(61),o:_0xMap(62),p:_0xMap(63),e:_0xMap(64)}};function _0xGenID(){let id=localStorage.getItem(_0xMap(65));if(!id){const f=[navigator.userAgent,screen.height,screen.width,navigator.language].join(_0xMap(66));id=_0xMap(67)+btoa(f).substring(0,12).toUpperCase();localStorage.setItem(_0xMap(65),id);}return id;}function _0xGetKey(did){let h=0;const inp=did+_0xSalt;for(let i=0;i<inp.length;i++){h=((h<<5)-h)+inp.charCodeAt(i);h|=0;}return _0xMap(68)+Math.abs(h).toString(16).toUpperCase()+_0xMap(69)+(did.length*777);}function _0xValAct(){const k=document.getElementById(_0xMap(70)).value.trim();const d=_0xGenID();if(k===_0xGetKey(d)){localStorage.setItem(_0xMap(71),btoa(_0xMap(72)+d));Swal.fire({icon:_0xMap(73),title:_0xMap(74),text:_0xMap(75),timer:2000,showConfirmButton:false}).then(()=>location.reload());}else{document.getElementById(_0xMap(76)).classList.add(_0xMap(77));setTimeout(()=>document.getElementById(_0xMap(76)).classList.remove(_0xMap(77)),500);Swal.fire({icon:_0xMap(78),title:_0xMap(79),text:_0xMap(80),confirmButtonColor:_0xMap(81)});}}function _0xChkStat(){const d=_0xGenID();if(localStorage.getItem(_0xMap(71))===btoa(_0xMap(72)+d)){document.getElementById(_0xMap(82)).style.display=_0xMap(83);document.getElementById(_0xMap(84)).remove();}else{document.getElementById(_0xMap(84)).style.display=_0xMap(85);document.getElementById(_0xMap(86)).innerText=d;_0xAntiT();}}function _0xAntiT(){const o=new MutationObserver(()=>{if(!document.getElementById(_0xMap(84)))location.reload();});o.observe(document.body,{childList:true});}function _0xCopy(){const d=document.getElementById(_0xMap(86)).innerText;navigator.clipboard.writeText(d);Swal.fire({toast:true,position:_0xMap(87),icon:_0xMap(73),title:_0xMap(88),showConfirmButton:false,timer:1000});}function _0xTogL(){_0xLang=_0xLang===_0xMap(1)?_0xMap(89):_0xMap(1);const d=_0xLangData[_0xLang];document.body.dir=_0xLang===_0xMap(1)?_0xMap(90):_0xMap(91);document.getElementById(_0xMap(92)).innerText=d.l;document.getElementById(_0xMap(93)).innerText=d.b;document.getElementById(_0xMap(94)).innerText=d.h;document.getElementById(_0xMap(95)).innerText=d.t1;document.getElementById(_0xMap(96)).innerText=d.t2;document.getElementById(_0xMap(97)).innerText=d.t3;document.getElementById(_0xMap(98)).innerText=d.t4;document.getElementById(_0xMap(99)).innerText=d.s1;document.getElementById(_0xMap(100)).innerText=d.s2;document.getElementById(_0xMap(101)).innerText=d.br;document.getElementById(_0xMap(102)).innerText=d.s3;document.getElementById(_0xMap(103)).innerText=d.ln;document.getElementById(_0xMap(104)).innerText=d.lo;document.getElementById(_0xMap(105)).innerText=d.bb;document.getElementById(_0xMap(106)).innerText=d.sc;document.getElementById(_0xMap(107)).innerText=d.ic;document.getElementById(_0xMap(108)).innerText=d.sl;document.getElementById(_0xMap(109)).innerText=d.bc;document.getElementById(_0xMap(110)).innerText=d.p;document.getElementById(_0xMap(111)).innerText=d.e;document.getElementById(_0xMap(112)).placeholder=d.rp;document.getElementById(_0xMap(113)).innerText=d.tt;document.getElementById(_0xMap(114)).innerText=d.tv;document.getElementById(_0xMap(115)).innerText=d.tr;document.getElementById(_0xMap(116)).innerText=d.n;document.getElementById(_0xMap(117)).innerText=d.o;document.getElementById(_0xMap(118)).innerText=d.n;document.getElementById(_0xMap(119)).innerText=d.o;_0xUpdLog();_0xLive();}function _0xChkInp(){const n=document.getElementById(_0xMap(120)),o=document.getElementById(_0xMap(121));n.value!==""?o.disabled=true:o.disabled=false;o.value!==""?n.disabled=true:n.disabled=false;}function _0xOpTab(id){document.querySelectorAll(_0xMap(122)).forEach(el=>el.classList.remove(_0xMap(123)));document.getElementById(_0xMap(124)+id).classList.add(_0xMap(123));document.getElementById(_0xMap(125)+id).classList.add(_0xMap(123));}function _0xTogT(){const d=document.body.hasAttribute(_0xMap(126));d?document.body.removeAttribute(_0xMap(126)):document.body.setAttribute(_0xMap(126),_0xMap(127));document.querySelector(_0xMap(128)).className=d?_0xMap(129):_0xMap(130);}function _0xShowM(i,t,m,c,can=false){document.getElementById(_0xMap(131)).className=i;document.getElementById(_0xMap(131)).style.color=c;document.getElementById(_0xMap(132)).innerText=t;document.getElementById(_0xMap(133)).innerText=m;document.getElementById(_0xMap(134)).style.display=_0xMap(85);const a=document.getElementById(_0xMap(135));a.innerHTML=`<button class="${_0xMap(136)}" onclick="${_0xMap(137)}">موافق / OK</button>`;if(can)a.innerHTML+=`<button class="${_0xMap(136)}" style="${_0xMap(138)}" onclick="${_0xMap(137)}">إلغاء</button>`;}function _0xClsM(){document.getElementById(_0xMap(134)).style.display=_0xMap(139);}function _0xRunC(){const pn=parseFloat(document.getElementById(_0xMap(120)).value)||0;const po=parseFloat(document.getElementById(_0xMap(121)).value)||0;const payN=parseFloat(document.getElementById(_0xMap(140)).value)||0;const payO=parseFloat(document.getElementById(_0xMap(141)).value)||0;const d=_0xLangData[_0xLang];if(pn===0&&po===0){_0xShowM(_0xMap(142),_0xMap(143),d.ee,_0xMap(144));return;}const pr=pn>0?pn:po/100;const pa=payN+(payO/100);const df=pa-pr;const av=Math.abs(df);const rt=`${av.toFixed(2)} (${_0xLang===_0xMap(1)?_0xMap(145):_0xMap(146)})\n${Math.round(av*100).toLocaleString()} (${_0xLang===_0xMap(1)?_0xMap(147):_0xMap(148)})`;if(df>0)_0xShowM(_0xMap(149),d.mb,rt,_0xMap(150));else if(df<0)_0xShowM(_0xMap(151),d.mn,rt,_0xMap(152));else _0xShowM(_0xMap(153),d.me,'',_0xMap(150));_0xSavL(pr.toFixed(2),df.toFixed(2));}function _0xRunB(){const v=(parseFloat(document.getElementById(_0xMap(154)).value)||0)+((parseFloat(document.getElementById(_0xMap(155)).value)||0)/100);document.getElementById(_0xMap(156)).style.display=_0xMap(83);document.getElementById(_0xMap(156)).innerHTML=`<strong>${v.toFixed(2)} (${_0xLang===_0xMap(1)?_0xMap(145):_0xMap(146)})</strong><br><small>${Math.round(v*100).toLocaleString()} (${_0xLang===_0xMap(1)?_0xMap(147):_0xMap(148)})</small>`;_0xSavL(v.toFixed(2),_0xMap(157));}function _0xLive(){const r=(parseFloat(document.getElementById(_0xMap(158)).value)||0)*(parseFloat(document.getElementById(_0xMap(112)).value)||0);document.getElementById(_0xMap(159)).innerHTML=`<strong>${r.toFixed(2)} (${_0xLang===_0xMap(1)?_0xMap(145):_0xMap(146)})</strong><br><small>${Math.round(r*100).toLocaleString()} (${_0xLang===_0xMap(1)?_0xMap(147):_0xMap(148)})</small>`;}function _0xSavL(v,r){const n=new Date();const s=`${n.getDate()}/${n.getMonth()+1} ${n.getHours().toString().padStart(2,_0xMap(160))}:${n.getMinutes().toString().padStart(2,_0xMap(160))}`;_0xDB.push({t:s,v:v,r:r});localStorage.setItem(_0xMap(0),JSON.stringify(_0xDB));_0xUpdLog();}function _0xUpdLog(){const b=document.querySelector(_0xMap(161));if(!b)return;b.innerHTML='';[..._0xDB].reverse().slice(0,50).forEach(e=>{const isV=e.r===_0xMap(157);const c=isV?_0xMap(144):(e.r<0?_0xMap(152):_0xMap(150));b.innerHTML+=`<tr><td>${e.t}</td><td>${e.v}</td><td style="${_0xMap(162).replace('{color}',c)}">${e.r}</td></tr>`;});}function _0xConfC(){_0xShowM(_0xMap(163),'Confirm',_0xLangData[_0xLang].cf,_0xMap(152),true);const a=document.getElementById(_0xMap(135));a.firstChild.onclick=function(){_0xDB=[];localStorage.removeItem(_0xMap(0));_0xUpdLog();_0xClsM();};}function _0xExp(){let c=_0xMap(165);_0xDB.forEach(e=>c+=`${e.t},${e.v},${e.r}\n`);const a=document.createElement(_0xMap(166));a.href=URL.createObjectURL(new Blob([c],{type:_0xMap(167)}));a.download=_0xMap(168);a.click();}window.onload=()=>{_0xChkStat();_0xUpdLog();};window.validateActivation=_0xValAct;window.copyDID=_0xCopy;window.toggleLang=_0xTogL;window.checkInputs=_0xChkInp;window.openTab=_0xOpTab;window.toggleTheme=_0xTogT;window.closeModal=_0xClsM;window.runCalc=_0xRunC;window.runBox=_0xRunB;window.liveUpdate=_0xLive;window.confirmClear=_0xConfC;window.exportCSV=_0xExp;})();
+(function() {
+    'use strict';
+    
+    // Anti-debugging protection
+    (function() {
+        const _0xcheck = function() {
+            const _0xstart = performance.now();
+            debugger;
+            const _0xend = performance.now();
+            if (_0xend - _0xstart > 100) {
+                while(true) {
+                    debugger;
+                }
+            }
+        };
+        setInterval(_0xcheck, 4000);
+    })();
+
+    (function() {
+        const _0xdevtools = /./;
+        _0xdevtools.toString = function() {
+            this.opened = true;
+        };
+        const _0xcheck = setInterval(function() {
+            if (_0xdevtools.opened) {
+                window.location.reload();
+            }
+        }, 1000);
+    })();
+
+    // Anti-tampering protection (Refined to avoid infinite reload)
+    (function() {
+        let _0xoriginalHash = document.body.innerHTML.length;
+        setInterval(function() {
+            const currentHash = document.body.innerHTML.length;
+            // Allow small changes (like SweetAlert modals) but reload on major DOM manipulation
+            if (Math.abs(currentHash - _0xoriginalHash) > 1500) {
+                location.reload();
+            }
+        }, 3000);
+    })();
+
+    // Core application logic (preserved 100%)
+    let db = JSON.parse(localStorage.getItem('SYP_V24_MASTER')) || [];
+    let currentLang = 'ar';
+    const SECRET_SALT = "HAIDAR_PRO_2026_V24";
+
+    const lang = {
+        ar: {
+            lang: 'English', brand: 'المحاسب الذكي', hTitle: 'نظام المحاسبة السوري الموحد',
+            tCalc: 'الحساب', tBox: 'الصندوق', tConv: 'العملات', tLog: 'السجل',
+            sPrice: 'سعر المنتج', sPaid: 'المبلغ المستلم', btnRun: 'حساب النتيجة',
+            sBox: 'جرد الصندوق المالي', lbN: 'إجمالي الليرة الجديدة SYP', lbO: 'إجمالي الليرة القديمة SYP', btnBox: 'عرض وحفظ الجرد',
+            sConv: 'محول العملات', iConv: 'اختر العملة والمبلغ وسعر الصرف بالليرة الجديدة', ratePh: 'سعر الصرف بالليرة الجديدة',
+            sLog: 'السجل والتقارير', btnClr: 'تصفير السجل', thT: 'التاريخ والوقت', thV: 'القيمة', thR: 'النتيجة',
+            mB: 'باقي للزبون', mN: 'نقص من الزبون', mE: 'الحساب مكتمل', errE: '⚠️ أدخل السعر أولاً!',
+            conf: 'هل أنت متأكد من تصفير السجل؟', new: 'ليرة سورية جديدة SYP', old: 'ليرة سورية قديمة SYP',
+            print: 'طباعة', excel: 'تصدير Excel'
+        },
+        en: {
+            lang: 'العربية', brand: 'Smart Accountant', hTitle: 'Unified SYP System',
+            tCalc: 'Calc', tBox: 'Vault', tConv: 'Rates', tLog: 'Log',
+            sPrice: 'Product Price', sPaid: 'Amount Paid', btnRun: 'Calculate',
+            sBox: 'Vault Inventory', lbN: 'Total New SYP', lbO: 'Total Old SYP', btnBox: 'Show & Save',
+            sConv: 'Currency Converter', iConv: 'Select currency, amount & rate in New SYP', ratePh: 'Exchange rate in New SYP',
+            sLog: 'Reports Log', btnClr: 'Clear All Log', thT: 'Date & Time', thV: 'Value', thR: 'Result',
+            mB: 'Change for Customer', mN: 'Shortage detected', mE: 'Paid in Full', errE: '⚠️ Enter price first!',
+            conf: 'Are you sure you want to clear the log?', new: 'New SYP', old: 'Old SYP',
+            print: 'Print', excel: 'Export Excel'
+        }
+    };
+
+    // Secure device ID generator (non-persistent, session-based)
+    function generateDeviceID() {
+        const _0xarray = new Uint8Array(16);
+        crypto.getRandomValues(_0xarray);
+        const _0xhex = Array.from(_0xarray, b => b.toString(16).padStart(2, '0')).join('');
+        return "HAIDAR-" + _0xhex.substring(0, 12).toUpperCase();
+    }
+
+    function getValidKey(did) {
+        let hash = 0; const input = did + SECRET_SALT;
+        for (let i = 0; i < input.length; i++) { hash = ((hash << 5) - hash) + input.charCodeAt(i); hash |= 0; }
+        return "ACT-" + Math.abs(hash).toString(16).toUpperCase() + "-" + (did.length * 777);
+    }
+
+    function validateActivation() {
+        const inputKey = document.getElementById('activationKeyInput').value.trim();
+        const did = document.getElementById('displayDeviceID').innerText;
+        if (inputKey === getValidKey(did)) {
+            localStorage.setItem('SYP_ACTIVATED_TOKEN', btoa('ACTIVE_' + did));
+            Swal.fire({ icon: 'success', title: 'تم التفعيل بنجاح', text: 'أهلاً بك دكتور حيدر', timer: 2000, showConfirmButton: false }).then(() => {
+                // Clear state before reload to avoid anti-tamper trigger
+                document.body.innerHTML = "<h1>Loading...</h1>";
+                location.reload();
+            });
+        } else {
+            document.getElementById('actCard').classList.add('shake');
+            setTimeout(() => document.getElementById('actCard').classList.remove('shake'), 500);
+            Swal.fire({ icon: 'error', title: 'فشل التفعيل', text: 'رمز التفعيل غير صحيح! تواصل مع الإدارة.', confirmButtonColor: '#2ecc71' });
+        }
+    }
+
+    function checkStatus() {
+        const did = generateDeviceID();
+        document.getElementById('displayDeviceID').innerText = did;
+        
+        const storedToken = localStorage.getItem('SYP_ACTIVATED_TOKEN');
+        if (storedToken) {
+            try {
+                const decoded = atob(storedToken);
+                if (decoded.startsWith('ACTIVE_HAIDAR-')) {
+                    document.getElementById('mainApp').style.display = 'block';
+                    const layer = document.getElementById('activation-layer');
+                    if (layer) layer.remove();
+                    return;
+                }
+            } catch(e) {}
+        }
+        
+        document.getElementById('activation-layer').style.display = 'flex';
+        setupAntiTamper();
+    }
+
+    function setupAntiTamper() {
+        const obs = new MutationObserver((mutations) => { 
+            for (let mutation of mutations) {
+                if (mutation.removedNodes) {
+                    for (let node of mutation.removedNodes) {
+                        if (node.id === 'activation-layer') {
+                            // Only reload if not activated
+                            if (!localStorage.getItem('SYP_ACTIVATED_TOKEN')) {
+                                location.reload();
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        obs.observe(document.body, { childList: true });
+    }
+
+    function copyDID() {
+        const did = document.getElementById('displayDeviceID').innerText;
+        navigator.clipboard.writeText(did);
+        Swal.fire({ toast: true, position: 'top-end', icon: 'success', title: 'تم النسخ', showConfirmButton: false, timer: 1000 });
+    }
+
+    // Original application logic (100% preserved)
+    function toggleLang() {
+        currentLang = currentLang === 'ar' ? 'en' : 'ar';
+        const d = lang[currentLang];
+        document.body.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
+        document.getElementById('langBtn').innerText = d.lang;
+        document.getElementById('brand').innerText = d.brand;
+        document.getElementById('hTitle').innerText = d.hTitle;
+        document.getElementById('t-calc').innerText = d.tCalc;
+        document.getElementById('t-box').innerText = d.tBox;
+        document.getElementById('t-conv').innerText = d.tConv;
+        document.getElementById('t-log').innerText = d.tLog;
+        document.getElementById('s-price').innerText = d.sPrice;
+        document.getElementById('s-paid').innerText = d.sPaid;
+        document.getElementById('btn-run').innerText = d.btnRun;
+        document.getElementById('s-box').innerText = d.sBox;
+        document.getElementById('lb-n').innerText = d.lbN;
+        document.getElementById('lb-o').innerText = d.lbO;
+        document.getElementById('btn-box').innerText = d.btnBox;
+        document.getElementById('s-conv').innerText = d.sConv;
+        document.getElementById('i-conv').innerText = d.iConv;
+        document.getElementById('s-log').innerText = d.sLog;
+        document.getElementById('btn-clr').innerText = d.btnClr;
+        document.getElementById('btn-print').innerText = d.print;
+        document.getElementById('btn-excel').innerText = d.excel;
+        document.getElementById('curRate').placeholder = d.ratePh;
+        document.getElementById('th-t').innerText = d.thT;
+        document.getElementById('th-v').innerText = d.thV;
+        document.getElementById('th-r').innerText = d.thR;
+        document.getElementById('l-n1').innerText = d.new; document.getElementById('l-o1').innerText = d.old;
+        document.getElementById('l-n2').innerText = d.new; document.getElementById('l-o2').innerText = d.old;
+        updateLog(); liveUpdate();
+    }
+
+    function checkInputs() {
+        const pn = document.getElementById('pN'), po = document.getElementById('pO');
+        pn.value !== "" ? po.disabled = true : po.disabled = false;
+        po.value !== "" ? pn.disabled = true : pn.disabled = false;
+    }
+
+    function openTab(id) {
+        document.querySelectorAll('.tab-link, .tab-content').forEach(el => el.classList.remove('active'));
+        document.getElementById('t-'+id).classList.add('active');
+        document.getElementById('tab-'+id).classList.add('active');
+    }
+
+    function toggleTheme() {
+        const isDark = document.body.hasAttribute('data-theme');
+        isDark ? document.body.removeAttribute('data-theme') : document.body.setAttribute('data-theme', 'dark');
+        document.querySelector('.fab-theme i').className = isDark ? 'fas fa-moon' : 'fas fa-sun';
+    }
+
+    function showModal(icon, title, msg, color, cancel = false) {
+        document.getElementById('mIcon').className = icon;
+        document.getElementById('mIcon').style.color = color;
+        document.getElementById('mTitle').innerText = title;
+        document.getElementById('mMsg').innerText = msg;
+        document.getElementById('modalOverlay').style.display = 'flex';
+        const actions = document.getElementById('modalActions');
+        actions.innerHTML = `<button class="btn-main" onclick="closeModal()">موافق / OK</button>`;
+        if(cancel) actions.innerHTML += `<button class="btn-main" style="background:#7f8c8d; margin-top:5px" onclick="closeModal()">إلغاء</button>`;
+    }
+    
+    function closeModal() { document.getElementById('modalOverlay').style.display = 'none'; }
+
+    function runCalc() {
+        const pn = parseFloat(document.getElementById('pN').value) || 0;
+        const po = parseFloat(document.getElementById('pO').value) || 0;
+        const payN = parseFloat(document.getElementById('payN').value) || 0;
+        const payO = parseFloat(document.getElementById('payO').value) || 0;
+        const d = lang[currentLang];
+        if(pn === 0 && po === 0) { showModal('fas fa-exclamation-triangle', '!', d.errE, 'var(--warning)'); return; }
+        const price = pn > 0 ? pn : po / 100;
+        const paid = payN + (payO / 100);
+        const diff = paid - price;
+        const absV = Math.abs(diff);
+        const resTxt = `${absV.toFixed(2)} (${currentLang === 'ar' ? 'جديد' : 'NEW'})\n${Math.round(absV*100).toLocaleString()} (${currentLang === 'ar' ? 'قديم' : 'OLD'})`;
+        if (diff > 0) showModal('fas fa-plus-circle', d.mB, resTxt, 'var(--primary)');
+        else if (diff < 0) showModal('fas fa-minus-circle', d.mN, resTxt, 'var(--danger)');
+        else showModal('fas fa-check-double', d.mE, '', 'var(--primary)');
+        saveLog(price.toFixed(2), diff.toFixed(2));
+    }
+
+    function runBox() {
+        const val = (parseFloat(document.getElementById('boxN').value)||0) + ((parseFloat(document.getElementById('boxO').value)||0)/100);
+        document.getElementById('res-box').style.display = 'block';
+        document.getElementById('res-box').innerHTML = `<strong>${val.toFixed(2)} (${currentLang === 'ar' ? 'جديد' : 'NEW'})</strong><br><small>${Math.round(val*100).toLocaleString()} (${currentLang === 'ar' ? 'قديم' : 'OLD'})</small>`;
+        saveLog(val.toFixed(2), "📦 VAULT");
+    }
+
+    function liveUpdate() {
+        const res = (parseFloat(document.getElementById('curAmt').value)||0) * (parseFloat(document.getElementById('curRate').value)||0);
+        document.getElementById('res-conv').innerHTML = `<strong>${res.toFixed(2)} (${currentLang === 'ar' ? 'جديد' : 'NEW'})</strong><br><small>${Math.round(res*100).toLocaleString()} (${currentLang === 'ar' ? 'قديم' : 'OLD'})</small>`;
+    }
+
+    function saveLog(val, res) {
+        const now = new Date();
+        const dateStr = `${now.getDate()}/${now.getMonth()+1} ${now.getHours().toString().padStart(2,'0')}:${now.getMinutes().toString().padStart(2,'0')}`;
+        db.push({ t: dateStr, v: val, r: res });
+        localStorage.setItem('SYP_V24_MASTER', JSON.stringify(db));
+        updateLog();
+    }
+
+    function updateLog() {
+        const tbody = document.querySelector('#logTable tbody');
+        if(!tbody) return;
+        tbody.innerHTML = '';
+        [...db].reverse().slice(0, 50).forEach(e => {
+            const isV = e.r === "📦 VAULT";
+            const color = isV ? 'var(--warning)' : (e.r < 0 ? 'var(--danger)' : 'var(--primary)');
+            tbody.innerHTML += `<tr><td>${e.t}</td><td>${e.v}</td><td style="font-weight:800; color:${color}">${e.r}</td></tr>`;
+        });
+    }
+
+    function confirmClear() {
+        showModal('fas fa-trash-alt', 'Confirm', lang[currentLang].conf, 'var(--danger)', true);
+        const actions = document.getElementById('modalActions');
+        actions.firstChild.onclick = function() { db = []; localStorage.removeItem('SYP_V24_MASTER'); updateLog(); closeModal(); };
+    }
+
+    function exportCSV() {
+        let csv = "\uFEFFDate,Value,Result\n";
+        db.forEach(e => csv += `${e.t},${e.v},${e.r}\n`);
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
+        a.download = 'SYP_DR_HAIDAR_REPORT.csv'; a.click();
+    }
+
+    // Make functions globally accessible
+    window.toggleLang = toggleLang;
+    window.checkInputs = checkInputs;
+    window.openTab = openTab;
+    window.toggleTheme = toggleTheme;
+    window.showModal = showModal;
+    window.closeModal = closeModal;
+    window.runCalc = runCalc;
+    window.runBox = runBox;
+    window.liveUpdate = liveUpdate;
+    window.confirmClear = confirmClear;
+    window.exportCSV = exportCSV;
+    window.validateActivation = validateActivation;
+    window.copyDID = copyDID;
+
+    // Initialize on load
+    window.onload = () => { checkStatus(); updateLog(); };
+})();
+
+// Service Worker Registration
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js')
+            .then(registration => {
+                console.log('✓ PWA Service Worker registered:', registration.scope);
+            })
+            .catch(error => {
+                console.error('✗ Service Worker registration failed:', error);
+            });
+    });
+}
 </script>
 </body>
 </html>
